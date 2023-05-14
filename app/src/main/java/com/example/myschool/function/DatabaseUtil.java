@@ -1,4 +1,4 @@
-package com.example.myschool;
+package com.example.myschool.function;
 
 import java.io.FileOutputStream;
 import java.io.InputStream;

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +15,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.myschool.function.NewsFragmentPagerAdapter;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 import org.litepal.LitePal;
 
@@ -33,9 +36,20 @@ public class MainActivity extends BaseActivity {
         //设置首页工具栏内容以及样式
         initToolBarView();
         //将页面绑定viewPager，进行设置
-       // initViewPager();
+        initViewPager();
         //初始化layout的设置，例如图标，定位
-        // initTabLayoutView();
+        initTabLayoutView();
+    }
+    private ViewPager mViewPager;
+    private void initViewPager() {
+        mViewPager= (ViewPager) findViewById(R.id.viewPager);
+        NewsFragmentPagerAdapter myFragmentPagerAdapter = new NewsFragmentPagerAdapter(getSupportFragmentManager());
+        mViewPager.setAdapter(myFragmentPagerAdapter);
+    }
+    private void initTabLayoutView() {
+        //将TabLayout与ViewPager绑定在一起
+        TabLayout mTabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        mTabLayout.setupWithViewPager(mViewPager);
     }
     DrawerLayout drawerLayout;
     private void initToolBarView() {

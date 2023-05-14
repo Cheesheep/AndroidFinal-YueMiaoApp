@@ -1,7 +1,5 @@
 package com.example.myschool;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -12,6 +10,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.myschool.function.DatabaseUtil;
 import com.example.myschool.schobject.UserInfo;
 
 import org.litepal.LitePal;

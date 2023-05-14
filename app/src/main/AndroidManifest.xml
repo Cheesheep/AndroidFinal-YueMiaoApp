@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!--允许查看网络状态-->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <!--允许连接互联网-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 允许查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许连接互联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name="org.litepal.LitePalApplication"
@@ -16,22 +15,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySchool"
         tools:targetApi="31">
-        <!--首页作为MainActivity-->
+        <activity
+            android:name=".NewsArticleContentActivity"
+            android:exported="false" />
+        <!-- 首页作为MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.SZU_PAGE">
-        </activity>
-        <!--登录页面作为主活动-->
+            android:theme="@style/Theme.SZU_PAGE"></activity> <!-- 登录页面作为主活动 -->
         <activity
             android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.SZU_PAGE">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

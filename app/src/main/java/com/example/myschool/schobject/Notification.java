@@ -9,6 +9,15 @@ public class Notification extends LitePalSupport {
     private String title; //文章标题
     private String faculty;//所属学院
     private String date;
+    private String label;//文章所属的tab
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
 
     public Integer getId() {
         return id;
