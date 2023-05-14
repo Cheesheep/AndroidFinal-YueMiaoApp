@@ -73,34 +73,14 @@ public class LoginActivity extends BaseActivity {
                             editor.clear();
                         }
                         editor.apply();
-                        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                        startActivity(intent);
+                        //将intent传输过去
+                        MainActivity.actionStart(LoginActivity.this,info);
                         finish();
                         return;
                     }
                 }
                 Toast.makeText(LoginActivity.this,"账号或密码错误！",
                         Toast.LENGTH_SHORT).show();
-//                if("admin".equals(account.trim()) && "123456".equals(password.trim())){
-//                    editor = pref.edit();
-//                    if(rememberPass.isChecked()){ //检查是否勾选了记住密码
-//                        //使用Editor来添加数据存储
-//                        editor.putBoolean("remember_password",true);
-//                        editor.putString("account",account);
-//                        editor.putString("password",password);
-//                    }
-//                    else{
-//                        editor.clear();
-//                    }
-//                    editor.apply();
-//                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-//                    startActivity(intent);
-//                    finish();
-//                }
-//                else{
-//                    Toast.makeText(LoginActivity.this,"account or password is invalid",
-//                            Toast.LENGTH_SHORT).show();
-//                }
             }
         });
     }

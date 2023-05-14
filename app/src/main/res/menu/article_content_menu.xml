@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--    <item-->
+<!--        android:id="@+id/article_open_webView"-->
+<!--        android:title="阅读原文"-->
+<!--        />-->
+    <item
+        android:id="@+id/article_open_browser"
+        android:title="用浏览器打开"
+        />
+</menu>
