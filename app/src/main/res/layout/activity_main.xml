@@ -11,6 +11,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
@@ -20,6 +22,17 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <!--顶部菜单-->
+    <fragment
+        android:id="@+id/grid_menu"
+        android:name="com.example.myschool.fragment.MainGridMenuFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.6"
+        tools:layout="@layout/fragment_main_grid_menu"
+        tools:ignore="MissingConstraints" />
+
     <!--顶部导航栏，切换选项卡-->
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -39,7 +52,7 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="4"/>
 </LinearLayout>
     <!--左侧导航菜单-->
     <com.google.android.material.navigation.NavigationView

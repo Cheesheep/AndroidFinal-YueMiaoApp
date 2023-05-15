@@ -6,14 +6,11 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myschool.function.ForceOffLineReceiver;
 import com.example.myschool.function.NavigationUtil;
 import com.example.myschool.function.NewsFragmentPagerAdapter;
 import com.example.myschool.schobject.UserInfo;
@@ -59,17 +56,14 @@ public class MainActivity extends BaseActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         //将图标菜单文件添加到toolbar当中
         myToolbar.inflateMenu(R.menu.toolbar_menu);
-        myToolbar.setTitle("Hello News");
+        myToolbar.setTitle("SZU");
         //ToolBar的菜单的点击事件
         myToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
-            public boolean onMenuItemClick(MenuItem item) {
+            public boolean onMenuItemClick(MenuItem item) { //toolbar菜单点击事件
                 switch (item.getItemId()){
                     case R.id.logout_button:{
-                        //发送注销账户的广播
-                        Intent intent = new Intent("com.example.myschool.FORCE_OFFLINE");
-                        intent.setPackage(getPackageName());
-                        sendBroadcast(intent);
+                        ForceOffLineReceiver.sendLogoutBroadCast(MainActivity.this);
                         break;
                     }
                     default:

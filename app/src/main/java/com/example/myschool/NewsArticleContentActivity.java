@@ -27,7 +27,7 @@ public class NewsArticleContentActivity extends AppCompatActivity {
         //设置标题栏内容
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
-            setTitle("Article");
+            setTitle(getIntent().getStringExtra("title"));
             actionBar.setHomeButtonEnabled(true);//设置左上角是否可以点击
             actionBar.setDisplayHomeAsUpEnabled(true);//添加返回的图标
         }

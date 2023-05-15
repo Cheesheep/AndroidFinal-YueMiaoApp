@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LogOut"
-        android:id="@+id/logout_button"
-        tools:ignore="MissingConstraints">
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
 
-    </Button>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <fragment
+        android:id="@+id/right_frag"
+        android:name="com.example.myschool.fragment.MainRightFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_main_right"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>

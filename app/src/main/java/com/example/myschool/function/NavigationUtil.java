@@ -1,9 +1,7 @@
 package com.example.myschool.function;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,9 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -55,9 +51,7 @@ public class NavigationUtil {
                 switch (item.getItemId()) {
                     case R.id.logout_button:{
                         //发送注销账户的广播
-                        Intent intent = new Intent("com.example.myschool.FORCE_OFFLINE");
-                        intent.setPackage(activity.getPackageName());
-                        activity.sendBroadcast(intent);
+                        ForceOffLineReceiver.sendLogoutBroadCast(activity);
                         break;
                     }
                     default:{
