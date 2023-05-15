@@ -11,38 +11,32 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import com.example.myschool.MainActivity;
 import com.example.myschool.R;
+import com.example.myschool.fragment.MainLeftFragment;
 import com.google.android.material.navigation.NavigationView;
 
 
 
 public class NavigationUtil {
     MainActivity activity;
+    View fragmentView;
     Toolbar myToolbar;
     DrawerLayout drawerLayout;
-    public NavigationUtil(MainActivity activity,Toolbar myToolbar,DrawerLayout drawerLayout){
-        this.activity = activity;
+    public NavigationUtil(MainLeftFragment fragment,Toolbar myToolbar,DrawerLayout drawerLayout){
+        this.fragmentView = fragment.getView();
+        activity = (MainActivity) fragment.getActivity();
         this.myToolbar = myToolbar;
         this.drawerLayout = drawerLayout;
     }
     public void initMainNavigation(){
         initUserInfo();
 
-        //配置侧滑栏，并且监听点击事件
-        myToolbar.setNavigationIcon(R.drawable.personal);
-        //打开侧滑栏的监听事件
-        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                drawerLayout.openDrawer(GravityCompat.START);
-            }
-        });
+
         //侧滑栏里面的菜单的监听事件
-        NavigationView mNavigationView = activity.findViewById(R.id.nav_view);
+
+        NavigationView mNavigationView = fragmentView.findViewById(R.id.nav_view);
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             //侧滑栏中菜单的点击事件
             @Override
@@ -69,10 +63,10 @@ public class NavigationUtil {
     int[] imgArr = {R.drawable.admin,R.drawable.dog,R.drawable.mokelo};
     private void initUserInfo(){
         //获取可编辑的用户信息
-        NavigationView mNavigationView = activity.findViewById(R.id.nav_view);
-        View headerView = mNavigationView.getHeaderView(0);
+        NavigationView mNavigationView = fragmentView.findViewById(R.id.nav_view);
         //注意！：这里不能直接用Activity来findViewById是
-        // 因为下面的这些控件不在activity_main当中，而在nav_header当中
+        // 因为下面的这些控件不在activity_main当中，而在left_fragment的nav_header当中
+        View headerView = mNavigationView.getHeaderView(0);
         ImageView imageView = headerView.findViewById(R.id.icon_image);
         TextView nickName = headerView.findViewById(R.id.nav_nickname);
         TextView grade = headerView.findViewById(R.id.nav_grade);

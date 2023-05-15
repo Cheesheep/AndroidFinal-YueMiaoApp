@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edu_list">
+        <item>办事大厅</item>
+        <item>教师邮箱</item>
+        <item>Blackboard</item>
+        <item>OA系统</item>
+        <item>教务部</item>
+        <item>研究生院</item>
+        <item>科学技术部</item>
+        <item>实验设备</item>
+        <item>科学技术部</item>
+    </string-array>
+    <string-array name="stu_list">
+        <item>办事大厅</item>
+        <item>教师邮箱</item>
+        <item>Blackboard</item>
+        <item>OA系统</item>
+        <item>教务部</item>
+        <item>研究生院</item>
+        <item>科学技术部</item>
+        <item>实验设备</item>
+        <item>科学技术部</item>
+    </string-array>
+    <string-array name="life_list">
+        <item>办事大厅</item>
+        <item>教师邮箱</item>
+        <item>Blackboard</item>
+        <item>OA系统</item>
+        <item>教务部</item>
+        <item>研究生院</item>
+        <item>科学技术部</item>
+        <item>实验设备</item>
+        <item>科学技术部</item>
+    </string-array>
+</resources>
