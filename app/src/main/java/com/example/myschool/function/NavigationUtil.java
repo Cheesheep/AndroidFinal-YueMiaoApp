@@ -21,22 +21,20 @@ import com.google.android.material.navigation.NavigationView;
 
 public class NavigationUtil {
     MainActivity activity;
-    View fragmentView;
+    //View fragmentView;
     Toolbar myToolbar;
     DrawerLayout drawerLayout;
-    public NavigationUtil(MainLeftFragment fragment,Toolbar myToolbar,DrawerLayout drawerLayout){
-        this.fragmentView = fragment.getView();
-        activity = (MainActivity) fragment.getActivity();
+    public NavigationUtil(MainActivity activity,Toolbar myToolbar,DrawerLayout drawerLayout){
+        this.activity = activity;
         this.myToolbar = myToolbar;
         this.drawerLayout = drawerLayout;
     }
     public void initMainNavigation(){
         initUserInfo();
 
-
         //侧滑栏里面的菜单的监听事件
 
-        NavigationView mNavigationView = fragmentView.findViewById(R.id.nav_view);
+        NavigationView mNavigationView = activity.findViewById(R.id.nav_view);
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             //侧滑栏中菜单的点击事件
             @Override
@@ -63,7 +61,7 @@ public class NavigationUtil {
     int[] imgArr = {R.drawable.admin,R.drawable.dog,R.drawable.mokelo};
     private void initUserInfo(){
         //获取可编辑的用户信息
-        NavigationView mNavigationView = fragmentView.findViewById(R.id.nav_view);
+        NavigationView mNavigationView = activity.findViewById(R.id.nav_view);
         //注意！：这里不能直接用Activity来findViewById是
         // 因为下面的这些控件不在activity_main当中，而在left_fragment的nav_header当中
         View headerView = mNavigationView.getHeaderView(0);

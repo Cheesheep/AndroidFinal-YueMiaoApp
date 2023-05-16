@@ -2,25 +2,20 @@ package com.example.myschool.fragment;
 
 import android.os.Bundle;
 
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.text.BoringLayout;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+import android.widget.GridLayout;
 
-import com.example.myschool.MainActivity;
 import com.example.myschool.NewsArticleContentActivity;
 import com.example.myschool.R;
-import com.example.myschool.function.ForceOffLineReceiver;
-import com.example.myschool.function.NavigationUtil;
 import com.example.myschool.function.NewsFragmentPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
@@ -30,9 +25,21 @@ import com.google.android.material.tabs.TabLayout;
  */
 
 public class MainLeftFragment extends Fragment {
-    DrawerLayout drawerLayout;
-    Toolbar myToolbar;
+
     View view;
+    Boolean isTwoPane;
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if(getActivity().findViewById(R.id.right_frag) != null)
+            isTwoPane = false;//判断是否处于双页模式（手机屏幕）
+        else isTwoPane = true; //单页模式为Ipad
+        if(!isTwoPane){//若此时是平板模式，不是双页
+            //将左侧上方的菜单栏隐藏
+            GridLayout gridLayout = view.findViewById(R.id.main_grid_menu);
+            gridLayout.setVisibility(View.GONE);
+        }
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -41,24 +48,13 @@ public class MainLeftFragment extends Fragment {
         //设置首页工具栏内容以及样式
         //这里如果在onStart设置会报错Drawer为空
         // 因为这个时候可能Fragment已经构建好了
-        initToolBarView();
         //初始化上方的网格菜单
         initGridMenu();
         //将页面绑定viewPager，进行设置
         initViewPager();
         //初始化layout的设置，例如图标，定位
         initTabLayoutView();
-
         return view;
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        //由于在建立Navigation的时候需要发送Fragment
-        //而fragment的view在onCreateView当中是未构建好的，用不了
-        NavigationUtil navigationUtil = new NavigationUtil(this,myToolbar,drawerLayout);
-        navigationUtil.initMainNavigation();
     }
 
     private ViewPager mViewPager;
@@ -73,38 +69,11 @@ public class MainLeftFragment extends Fragment {
         mTabLayout.setupWithViewPager(mViewPager);
     }
 
-    private void initToolBarView() {
-        myToolbar = view.findViewById(R.id.my_toolbar);
-        drawerLayout = view.findViewById(R.id.drawer_layout);
-        //将图标菜单文件添加到toolbar当中
-        myToolbar.inflateMenu(R.menu.toolbar_menu);
-        myToolbar.setTitle("SZU");
-        //ToolBar的菜单的点击事件
-        myToolbar.setOnMenuItemClickListener(item -> { //toolbar菜单点击事件
-            switch (item.getItemId()){
-                case R.id.logout_button:{
-                    ForceOffLineReceiver.sendLogoutBroadCast((MainActivity) getActivity());
-                    break;
-                }
-                default:
-                    Toast.makeText(getActivity(), "菜单栏功能尚未开发", Toast.LENGTH_SHORT).show();
-                    break;
-            }
-            return true;
-        });
-        //设置侧滑栏图标
-        myToolbar.setNavigationIcon(R.drawable.personal);
-        //打开侧滑栏的监听事件
-        myToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                drawerLayout.openDrawer(GravityCompat.START);
-            }
-        });
-    }
+
     int[] menu_arr = {R.id.grid_bt1,R.id.grid_bt2,R.id.grid_bt3,R.id.grid_bt4,
             R.id.grid_bt5,R.id.grid_bt6,R.id.grid_bt7,R.id.grid_bt8};
     private void initGridMenu(){
+
         FragmentActivity activity = getActivity();
         for (int i = 0; i < 8; i++) {
             view.findViewById(menu_arr[i]).setOnClickListener(click_view -> {

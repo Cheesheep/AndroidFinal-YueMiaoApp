@@ -5,13 +5,13 @@
         android:id="@+id/tool_set"
         android:icon="@drawable/setting"
         android:orderInCategory="80"
-        android:title="edit"
+        android:title=""
         app:showAsAction="ifRoom|withText" />
     <item
         android:id="@+id/logout_button"
         android:icon="@drawable/logout"
         android:orderInCategory="80"
-        android:title="share"
+        android:title=""
         app:showAsAction="ifRoom|withText" />
     <!--    后面有更多的item如果放不下就会进入菜单栏-->
 </menu>

@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:background="@color/SZU_color3"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <fragment
-        android:id="@+id/main_left_fragment"
-        android:name="com.example.myschool.fragment.MainLeftFragment"
+    android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+        <!--顶部工具栏-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/white"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        <fragment
+            android:id="@+id/main_left_fragment"
+            android:name="com.example.myschool.fragment.MainLeftFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
-        android:layout_weight="1"
-        tools:layout="@layout/fragment_main_left"
-        tools:ignore="MissingConstraints" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_main_left"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <!--左侧导航菜单-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/left_drawer" />
+    <!--menu里是第二条的文件名，即侧滑菜单的布局文件-->
+    <!--    需要用drawLayout来实现侧边栏-->
+</androidx.drawerlayout.widget.DrawerLayout>
