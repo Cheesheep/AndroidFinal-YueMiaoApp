@@ -6,16 +6,10 @@
     android:orientation="horizontal"
     android:background="@color/SZU_color2"
     tools:context=".fragment.MainRightFragment">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/right_recycler_view"/>
 
-    <ListView
-        android:id="@+id/edu_listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/edu_list"/>
-    <ListView
-        android:id="@+id/stu_listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/stu_list"/>
 
 </FrameLayout>
