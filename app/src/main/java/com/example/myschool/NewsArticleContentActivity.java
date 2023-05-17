@@ -16,12 +16,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 
-public class NewsArticleContentActivity extends AppCompatActivity {
+public class NewsArticleContentActivity extends BaseActivity {
 
     private String articleUrl = null;
     private WebView webView;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_article_content);
         //设置标题栏内容

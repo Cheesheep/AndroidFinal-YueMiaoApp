@@ -1,5 +1,6 @@
 package com.example.myschool.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -15,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 
+import com.example.myschool.MainActivity2;
 import com.example.myschool.NewsArticleContentActivity;
 import com.example.myschool.R;
 import com.example.myschool.function.NewsFragmentPagerAdapter;
@@ -107,7 +109,7 @@ public class MainLeftFragment extends Fragment {
                         NewsArticleContentActivity.actionStart(activity,"荔园生活","https://www1.szu.edu.cn/tv/");
                         break;}
                     case R.id.grid_bt8: {
-
+                        MainActivity2.actionStart(activity);
                         break;}
                     default:break;
                 }

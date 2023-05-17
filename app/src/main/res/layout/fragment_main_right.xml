@@ -8,9 +8,10 @@
     tools:context=".fragment.MainRightFragment">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="130dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/szu_build"
+        android:scaleType="centerCrop"
         />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

@@ -1,5 +1,6 @@
 package com.example.myschool.function;
 
+import android.app.Activity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,8 +21,8 @@ import java.util.List;
 public class RightGridMenuAdapter extends RecyclerView.Adapter<RightGridMenuAdapter.ViewHolder> {
     List<Card> cardList = LitePal.findAll(Card.class);
     View cardView;
-    MainActivity activity;
-    public RightGridMenuAdapter(MainActivity activity){
+    Activity activity;
+    public RightGridMenuAdapter(Activity activity){
         this.activity = activity;
     }
     static class ViewHolder extends RecyclerView.ViewHolder{

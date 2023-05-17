@@ -15,10 +15,10 @@ import android.widget.TextView;
 
 import com.example.myschool.schobject.UserInfo;
 
-public class UserInfoPageActivity extends AppCompatActivity {
+public class UserInfoPageActivity extends BaseActivity {
     UserInfo curUserInfo = LoginActivity.userInfo;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info_page);
         setTitle("Personal Page");

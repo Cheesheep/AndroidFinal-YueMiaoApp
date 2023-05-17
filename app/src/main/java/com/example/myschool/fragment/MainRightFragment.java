@@ -1,5 +1,6 @@
 package com.example.myschool.fragment;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -32,7 +33,7 @@ public class MainRightFragment extends Fragment {
         StaggeredGridLayoutManager layoutManager = new
                 StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-        RightGridMenuAdapter adapter = new RightGridMenuAdapter((MainActivity) getActivity());
+        RightGridMenuAdapter adapter = new RightGridMenuAdapter((Activity) getActivity());
         recyclerView.setAdapter(adapter);
     }
 }

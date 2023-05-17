@@ -17,6 +17,7 @@
     <item
         android:icon="@drawable/logout2"
         android:id="@+id/logout_button"
-        android:title="注销" />
+        android:title="注销"
+        />
     <!--随意添加菜单选项-->
 </menu>
