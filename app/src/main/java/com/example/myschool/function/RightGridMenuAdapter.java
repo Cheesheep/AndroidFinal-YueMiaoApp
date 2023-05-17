@@ -48,8 +48,8 @@ public class RightGridMenuAdapter extends RecyclerView.Adapter<RightGridMenuAdap
     public void onBindViewHolder( ViewHolder viewHolder, int position) {
         Card card = cardList.get(position);
         int index = Integer.parseInt(card.image);
-        viewHolder.cardImage.setImageResource(R.drawable.card_bg1);
-        viewHolder.cardImage.setAlpha(0.5f);
+        viewHolder.cardImage.setImageResource(R.drawable.color_card06);
+        //viewHolder.cardImage.setAlpha(0.5f);
         viewHolder.cardText.setText(card.name);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override

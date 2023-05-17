@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 
 import com.example.myschool.NewsArticleContentActivity;
 import com.example.myschool.R;
@@ -67,6 +68,12 @@ public class MainLeftFragment extends Fragment {
         //将TabLayout与ViewPager绑定在一起
         TabLayout mTabLayout = (TabLayout) view.findViewById(R.id.tabLayout);
         mTabLayout.setupWithViewPager(mViewPager);
+        //设置更多文章的点击事件
+        ImageView imageView = view.findViewById(R.id.more_page_bt);
+        imageView.setOnClickListener(view -> {
+            //点击跳转到公文通
+            NewsArticleContentActivity.actionStart(getActivity(),"Notification","https://www1.szu.edu.cn/board/");
+        });
     }
 
 

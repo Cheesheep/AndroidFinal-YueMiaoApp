@@ -19,7 +19,7 @@ import org.litepal.tablemanager.Connector;
 import java.util.List;
 
 public class LoginActivity extends BaseActivity {
-
+    public static UserInfo userInfo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -73,8 +73,10 @@ public class LoginActivity extends BaseActivity {
                             editor.clear();
                         }
                         editor.apply();
-                        //将intent传输过去
-                        MainActivity.actionStart(LoginActivity.this,info);
+                        //将当前用户信息给到全局使用
+                        userInfo = info;
+                        //登录进入下一个活动
+                        MainActivity.actionStart(LoginActivity.this);
                         finish();
                         return;
                     }

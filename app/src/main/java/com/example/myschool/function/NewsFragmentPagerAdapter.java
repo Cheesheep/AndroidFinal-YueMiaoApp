@@ -9,7 +9,7 @@ import com.example.myschool.fragment.NotificationFragment;
 
 
 /**
- * Created by Carson_Ho on 16/7/22.
+ *
  * 用于TabLayout可以点击显示不同的新闻列表页面
  */
 public class NewsFragmentPagerAdapter extends FragmentPagerAdapter {

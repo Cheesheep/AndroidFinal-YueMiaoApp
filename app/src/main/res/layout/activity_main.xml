@@ -27,7 +27,6 @@
             android:name="com.example.myschool.fragment.MainLeftFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:layout_weight="1"
             tools:layout="@layout/fragment_main_left"
             tools:ignore="MissingConstraints" />
@@ -38,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorPrimary"
+        android:background="@color/SZU_color3"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/left_drawer" />
     <!--menu里是第二条的文件名，即侧滑菜单的布局文件-->

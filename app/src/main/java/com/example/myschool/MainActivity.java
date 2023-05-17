@@ -2,6 +2,7 @@ package com.example.myschool;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.midi.MidiDeviceService;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -13,6 +14,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.example.myschool.function.ForceOffLineReceiver;
 import com.example.myschool.function.NavigationUtil;
 import com.example.myschool.schobject.UserInfo;
+
+/**
+ * 主页面，单页模式放有左右碎片
+ * 双页模式下首先加载左边碎片
+ */
 
 public class MainActivity extends BaseActivity {
     DrawerLayout drawerLayout;
@@ -38,6 +44,10 @@ public class MainActivity extends BaseActivity {
         //ToolBar的菜单的点击事件
         myToolbar.setOnMenuItemClickListener(item -> { //toolbar菜单点击事件
             switch (item.getItemId()){
+                case R.id.szu_home:{
+                    NewsArticleContentActivity.actionStart(MainActivity.this,"Home","https://www1.szu.edu.cn/");
+                    break;
+                }
                 case R.id.logout_button:{
                     ForceOffLineReceiver.sendLogoutBroadCast(MainActivity.this);
                     break;
@@ -60,12 +70,8 @@ public class MainActivity extends BaseActivity {
     }
 
     //该方法用于接收来自Login登录时候传入的用户数据
-    public static void actionStart(Context context, UserInfo userInfo){
+    public static void actionStart(Context context){
         Intent intent = new Intent(context,MainActivity.class);
-        intent.putExtra("nickname",userInfo.getNickname());
-        intent.putExtra("grade",userInfo.getGrade());
-        intent.putExtra("major",userInfo.getMajor());
-        intent.putExtra("url",userInfo.getImgUrl());
         context.startActivity(intent);
     }
 }

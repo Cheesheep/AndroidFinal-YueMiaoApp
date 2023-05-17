@@ -2,5 +2,5 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!--tab的背景的选中颜色和原本样式颜色-->
     <item android:state_selected="true" android:drawable="@color/SZU_color2"/>
-    <item android:drawable="@color/white"/>
+    <item android:drawable="@color/SZU_color3"/>
 </selector>
