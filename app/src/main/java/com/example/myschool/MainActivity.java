@@ -5,12 +5,14 @@ import android.content.Intent;
 import android.media.midi.MidiDeviceService;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.myschool.function.BottomBarUtil;
 import com.example.myschool.function.ForceOffLineReceiver;
 import com.example.myschool.function.NavigationUtil;
 import com.example.myschool.schobject.UserInfo;
@@ -33,6 +35,7 @@ public class MainActivity extends BaseActivity {
         initToolBarView();
         NavigationUtil navigationUtil = new NavigationUtil(this,myToolbar,drawerLayout);
         navigationUtil.initMainNavigation();
+        BottomBarUtil.initBottomBar(MainActivity.this);
     }
 
     private void initToolBarView() {

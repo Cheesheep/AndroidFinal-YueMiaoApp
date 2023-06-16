@@ -31,7 +31,7 @@ public class MainRightFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.right_recycler_view);
         //通过这个设置一行多列的布局，瀑布式
         StaggeredGridLayoutManager layoutManager = new
-                StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
+                StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         RightGridMenuAdapter adapter = new RightGridMenuAdapter((Activity) getActivity());
         recyclerView.setAdapter(adapter);

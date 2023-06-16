@@ -1,6 +1,5 @@
 package com.example.myschool.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -9,14 +8,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.text.BoringLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 
-import com.example.myschool.MainActivity2;
+import com.example.myschool.VaccineCardActivity;
 import com.example.myschool.NewsArticleContentActivity;
 import com.example.myschool.R;
 import com.example.myschool.function.NewsFragmentPagerAdapter;
@@ -27,7 +25,7 @@ import com.google.android.material.tabs.TabLayout;
  * 也是手机模式下的主页面所有内容
  */
 
-public class MainLeftFragment extends Fragment {
+public class LocationListFragment extends Fragment {
 
     View view;
     Boolean isTwoPane;
@@ -47,10 +45,8 @@ public class MainLeftFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         //获取碎片视图
-        view = inflater.inflate(R.layout.fragment_main_left, container, false);
+        view = inflater.inflate(R.layout.fragment_location_list, container, false);
         //设置首页工具栏内容以及样式
-        //这里如果在onStart设置会报错Drawer为空
-        // 因为这个时候可能Fragment已经构建好了
         //初始化上方的网格菜单
         initGridMenu();
         //将页面绑定viewPager，进行设置
@@ -70,21 +66,15 @@ public class MainLeftFragment extends Fragment {
         //将TabLayout与ViewPager绑定在一起
         TabLayout mTabLayout = (TabLayout) view.findViewById(R.id.tabLayout);
         mTabLayout.setupWithViewPager(mViewPager);
-        //设置更多文章的点击事件
-        ImageView imageView = view.findViewById(R.id.more_page_bt);
-        imageView.setOnClickListener(view -> {
-            //点击跳转到公文通
-            NewsArticleContentActivity.actionStart(getActivity(),"Notification","https://www1.szu.edu.cn/board/");
-        });
     }
 
 
     int[] menu_arr = {R.id.grid_bt1,R.id.grid_bt2,R.id.grid_bt3,R.id.grid_bt4,
-            R.id.grid_bt5,R.id.grid_bt6,R.id.grid_bt7,R.id.grid_bt8};
+            R.id.grid_bt5,R.id.grid_bt6,R.id.grid_bt7};
     private void initGridMenu(){
 
         FragmentActivity activity = getActivity();
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 7; i++) {
             view.findViewById(menu_arr[i]).setOnClickListener(click_view -> {
                 switch (click_view.getId()){
                     case R.id.grid_bt1: {
@@ -106,10 +96,7 @@ public class MainLeftFragment extends Fragment {
                         NewsArticleContentActivity.actionStart(activity,"学生事务","https://www1.szu.edu.cn/view.asp?id=13");
                         break;}
                     case R.id.grid_bt7: {
-                        NewsArticleContentActivity.actionStart(activity,"荔园生活","https://www1.szu.edu.cn/tv/");
-                        break;}
-                    case R.id.grid_bt8: {
-                        MainActivity2.actionStart(activity);
+                        VaccineCardActivity.actionStart(activity);
                         break;}
                     default:break;
                 }

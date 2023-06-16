@@ -43,13 +43,12 @@ public class RightGridMenuAdapter extends RecyclerView.Adapter<RightGridMenuAdap
         cardView = view;
         return new ViewHolder(view);
     }
-    int[] cardImageList = {R.drawable.mokelo};
     //将数据与每个单元绑定上
     @Override
     public void onBindViewHolder( ViewHolder viewHolder, int position) {
         Card card = cardList.get(position);
         int index = Integer.parseInt(card.image);
-        viewHolder.cardImage.setImageResource(R.drawable.color_card06);
+        viewHolder.cardImage.setImageResource(R.color.white);
         //viewHolder.cardImage.setAlpha(0.5f);
         viewHolder.cardText.setText(card.name);
         cardView.setOnClickListener(new View.OnClickListener() {

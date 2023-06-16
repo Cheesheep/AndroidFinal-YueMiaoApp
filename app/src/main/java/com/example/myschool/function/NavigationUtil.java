@@ -1,23 +1,19 @@
 package com.example.myschool.function;
 
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.view.Gravity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.myschool.LoginActivity;
 import com.example.myschool.MainActivity;
+import com.example.myschool.PersonPageActivity;
 import com.example.myschool.R;
 import com.example.myschool.UserInfoPageActivity;
-import com.example.myschool.fragment.MainLeftFragment;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -56,7 +52,7 @@ public class NavigationUtil {
                     ForceOffLineReceiver.sendLogoutBroadCast(activity);
                     break;
                 }
-                case R.id.nav_item_user://和下一个共用
+                case R.id.nav_item_user://到用户中心去
                 {
                     UserInfoPageActivity.actionStart(activity);
                     break;
@@ -85,12 +81,13 @@ public class NavigationUtil {
         nickName.setText(LoginActivity.userInfo.getNickname());
         grade.setText(LoginActivity.userInfo.getGrade());
         major.setText(LoginActivity.userInfo.getMajor());
+        //这里的URL没有真正的存图片内容，这个以后还可以扩展
         int imgUrl = Integer.parseInt(LoginActivity.userInfo.getImgUrl());
         imageView.setImageResource(imgArr[imgUrl]);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                UserInfoPageActivity.actionStart(activity);
+                PersonPageActivity.actionStart(activity);
             }
         });
     }

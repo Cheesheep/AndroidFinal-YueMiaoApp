@@ -21,7 +21,7 @@ public class UserInfoPageActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info_page);
-        setTitle("Personal Page");
+        setTitle("User Info Page");
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);//设置返回图标可
@@ -31,7 +31,7 @@ public class UserInfoPageActivity extends BaseActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {//返回图标对应事件
         if(item.getItemId() == android.R.id.home){
             finish();
             return true;

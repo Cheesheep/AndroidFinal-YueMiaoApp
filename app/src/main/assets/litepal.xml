@@ -7,5 +7,4 @@
         <mapping class="com.example.myschool.schobject.UserInfo"></mapping>
         <mapping class="com.example.myschool.schobject.Card"></mapping>
     </list>
-
 </litepal>

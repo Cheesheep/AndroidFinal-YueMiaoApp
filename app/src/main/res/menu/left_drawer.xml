@@ -5,7 +5,7 @@
     <item
         android:icon="@drawable/personal"
         android:id="@+id/nav_item_user"
-        android:title="用户信息" />
+        android:title="受种者信息" />
     <item
         android:icon="@drawable/setting"
         android:id="@+id/nav_item_setting"
@@ -13,7 +13,7 @@
     <item
         android:icon="@drawable/about"
         android:id="@+id/nav_item_about"
-        android:title="关于我们" />
+        android:title="常见问题" />
     <item
         android:icon="@drawable/logout2"
         android:id="@+id/logout_button"

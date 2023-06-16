@@ -2,7 +2,6 @@ package com.example.myschool;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,12 +11,12 @@ import android.view.MenuItem;
 /**
  * 该活动是主页跳转到《更多服务》后跳转过来的次级主页
  */
-public class MainActivity2 extends BaseActivity {
+public class VaccineCardActivity extends BaseActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_vaccine_card);
         ActionBar actionBar = getSupportActionBar();
         setTitle("SZU Menu");
         if(actionBar != null){
@@ -34,7 +33,7 @@ public class MainActivity2 extends BaseActivity {
     }
     //封装活动跳转的接口
     public static void actionStart(Context context){
-        Intent intent = new Intent(context,MainActivity2.class);
+        Intent intent = new Intent(context, VaccineCardActivity.class);
         context.startActivity(intent);
     }
 }
