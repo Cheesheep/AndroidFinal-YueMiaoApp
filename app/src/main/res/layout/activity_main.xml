@@ -30,14 +30,46 @@
                 android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
             <!--页面菜单以及listview-->
+            <!--轮播图-->
+            <fragment
+                android:id="@+id/slide_show"
+                android:name="com.example.myschool.fragment.SlideShowFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                tools:layout="@layout/fragment_slide_show"
+                tools:ignore="MissingConstraints" />
+            <!--菜单页面以及新闻-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预约专题"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提前预约 有序接种"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
             <fragment
                 android:id="@+id/main_left_fragment"
                 android:name="com.example.myschool.fragment.LocationListFragment"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="5"
                 tools:layout="@layout/fragment_location_list"
                 tools:ignore="MissingConstraints" />
+
         </LinearLayout>
         <!--左侧导航菜单-->
         <com.google.android.material.navigation.NavigationView

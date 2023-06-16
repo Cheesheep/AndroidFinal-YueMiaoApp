@@ -7,7 +7,27 @@
     android:background="@color/SZU_color3">
     <!--顶部网格菜单-->
     <include layout="@layout/main_grid_menu"/>
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新冠新闻"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实时了解 疫情动态"
+            android:textColor="@color/gray"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
     <!--顶部导航栏，切换选项卡-->
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
