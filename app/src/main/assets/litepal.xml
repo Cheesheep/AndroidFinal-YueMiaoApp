@@ -3,9 +3,9 @@
     <dbname value="SchoolDemo"></dbname>
     <version value="5" ></version>
     <list>
-        <mapping class="com.example.myschool.schobject.Notification"></mapping>
-        <mapping class="com.example.myschool.schobject.UserInfo"></mapping>
-        <mapping class="com.example.myschool.schobject.Card"></mapping>
-        <mapping class="com.example.myschool.schobject.InoculateInfo"></mapping>
+        <mapping class="com.example.yuemiaoapp.schobject.Notification"></mapping>
+        <mapping class="com.example.yuemiaoapp.schobject.UserInfo"></mapping>
+        <mapping class="com.example.yuemiaoapp.schobject.Card"></mapping>
+        <mapping class="com.example.yuemiaoapp.schobject.InoculateInfo"></mapping>
     </list>
 </litepal>

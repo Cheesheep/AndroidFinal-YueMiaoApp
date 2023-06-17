@@ -7,7 +7,7 @@
     tools:context=".VaccineCardActivity">
     <fragment
         android:id="@+id/right_frag"
-        android:name="com.example.myschool.fragment.MainRightFragment"
+        android:name="com.example.yuemiaoapp.fragment.MainRightFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"

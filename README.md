@@ -414,39 +414,23 @@ activity_main (sw600dp)
 ~~~xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    .........>
-    <LinearLayout
-        android:layout_width="match_parent" .......>
-        <!--顶部工具栏-->
-        <androidx.appcompat.widget.Toolbar   ......./>
-        <ImageView ............/>
-        <LinearLayout.........>
-            <!--左边碎片-->
-            <fragment
-                android:id="@+id/main_left_fragment"
-                android:name="com.example.myschool.fragment.LocationListFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                tools:layout="@layout/fragment_main_left"
-                tools:ignore="MissingConstraints" />
-            <!--右边碎片-->
-            <fragment
-                android:id="@+id/right_frag"
-                android:name="com.example.myschool.fragment.MainRightFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="2"
-                tools:layout="@layout/fragment_main_right"
-                tools:ignore="MissingConstraints" />
-        </LinearLayout>
-    </LinearLayout>
-    <!--左侧导航菜单-->
-    <com.google.android.material.navigation.NavigationView
-        ...... />
-</androidx.drawerlayout.widget.DrawerLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android".........><LinearLayout
+android:layout_width="match_parent" .......><!--顶部工具栏-->
+<androidx.appcompat.widget.Toolbar   ......./><ImageView ............/><LinearLayout.........>
+<!--左边碎片-->
+<fragment android:id="@+id/main_left_fragment"
+    android:name="com.example.yuemiaoapp.fragment.LocationListFragment"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_weight="3" tools:layout="@layout/fragment_main_left"
+    tools:ignore="MissingConstraints" />
+<!--右边碎片-->
+<fragment android:id="@+id/right_frag"
+    android:name="com.example.yuemiaoapp.fragment.MainRightFragment"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_gravity="center" android:layout_weight="2"
+    tools:layout="@layout/fragment_main_right" tools:ignore="MissingConstraints" />
+</LinearLayout></LinearLayout><!--左侧导航菜单-->
+<com.google.android.material.navigation.NavigationView...... /></androidx.drawerlayout.widget.DrawerLayout>
 ~~~
 
 这里省略了其他的内容，着重于看两个fragment，这里的**layout_weight**的大小不同，说明它们占据的布局位置也不同。
@@ -805,9 +789,9 @@ if(isRemember){
       <dbname value="SchoolDemo"></dbname>
       <version value="3" ></version>
       <list>
-          <mapping class="com.example.myschool.schobject.Notification"></mapping>
-          <mapping class="com.example.myschool.schobject.UserInfo"></mapping>
-          <mapping class="com.example.myschool.schobject.Card"></mapping>
+          <mapping class="com.example.yuemiaoapp.schobject.Notification"></mapping>
+          <mapping class="com.example.yuemiaoapp.schobject.UserInfo"></mapping>
+          <mapping class="com.example.yuemiaoapp.schobject.Card"></mapping>
       </list>
   </litepal>
   ~~~
