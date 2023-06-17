@@ -3,11 +3,35 @@ package com.example.myschool.schobject;
 import org.litepal.crud.LitePalSupport;
 
 public class UserInfo extends LitePalSupport {
+    private Integer id;
     private String admin;
     private String password;
     private String imgUrl;//头像链接
     private String nickname;
-    private String grade;
+    private String phone;//电话号码
+    private String major;
+    private Integer inoculate_id;//用户当前绑定的受种者信息
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+    public Integer getInoculate_id() {
+        return inoculate_id;
+    }
+
+    public void setInoculate_id(Integer inoculate_id) {
+        this.inoculate_id = inoculate_id;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+    public void setMajor(String major) {
+        this.major = major;
+    }
 
     public String getAdmin() {
         return admin;
@@ -41,37 +65,6 @@ public class UserInfo extends LitePalSupport {
         this.nickname = nickname;
     }
 
-    public String getGrade() {
-        return grade;
-    }
-
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
-
-    public String getMajor() {
-        return major;
-    }
-
-    public void setMajor(String major) {
-        this.major = major;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 
     public String getPhone() {
         return phone;
@@ -81,8 +74,4 @@ public class UserInfo extends LitePalSupport {
         this.phone = phone;
     }
 
-    private String major;
-    private String sex;
-    private Integer age;
-    private String phone;//电话号码
 }

@@ -1,5 +1,6 @@
 package com.example.myschool.function;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -50,7 +51,7 @@ public class ForceOffLineReceiver extends BroadcastReceiver {
     }
 
     //确认是否注销的对话框和退出确认的广播发送
-    public static void sendLogoutBroadCast(MainActivity activity){
+    public static void sendLogoutBroadCast(Activity activity){
         android.app.AlertDialog.Builder dialog = new android.app.AlertDialog.Builder (activity);//通过AlertDialog.Builder创建出一个AlertDialog的实例
 
         dialog.setTitle("注销");//设置对话框的标题

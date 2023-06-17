@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +54,7 @@ public class SlideShowFragment extends Fragment {
     private LinearLayout ll_dots_container;
     private TextView loop_dec;
     private int previousSelectedPosition = 0;
-    boolean isRunning = false;
+    boolean isRunning = true;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -61,6 +62,11 @@ public class SlideShowFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_slide_show, container, false);
         initLoopView();  //实现轮播图
         return view;
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        isRunning = false;
     }
 
     private void initLoopView() {
@@ -126,7 +132,6 @@ public class SlideShowFragment extends Fragment {
         // 开启轮询
         new Thread(){
             public void run(){
-                isRunning = true;
                 while(isRunning){
                     try{
                         Thread.sleep(5000);
@@ -134,6 +139,8 @@ public class SlideShowFragment extends Fragment {
                         e.printStackTrace();
                     }
                     //下一条
+                    if(!isRunning)
+                        break;
                     requireActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

@@ -29,7 +29,6 @@ public class LoginActivity extends BaseActivity {
         Connector.getDatabase(); //创建数据库
         DatabaseUtil.packDataBase(this); //导入assets的数据库文件
         initUI();
-
     }
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;

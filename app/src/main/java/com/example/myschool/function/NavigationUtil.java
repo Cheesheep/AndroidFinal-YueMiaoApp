@@ -9,11 +9,11 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.myschool.InoculateListActivity;
 import com.example.myschool.LoginActivity;
 import com.example.myschool.MainActivity;
 import com.example.myschool.PersonPageActivity;
 import com.example.myschool.R;
-import com.example.myschool.UserInfoPageActivity;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -54,7 +54,7 @@ public class NavigationUtil {
                 }
                 case R.id.nav_item_user://到用户中心去
                 {
-                    UserInfoPageActivity.actionStart(activity);
+                    InoculateListActivity.actionStart(activity);
                     break;
                 }
                 default:{
@@ -75,18 +75,17 @@ public class NavigationUtil {
         // 因为下面的这些控件不在activity_main当中，而在left_fragment的nav_header当中
         ImageView imageView = headerView.findViewById(R.id.icon_image);
         TextView nickName = headerView.findViewById(R.id.nav_nickname);
-        TextView grade = headerView.findViewById(R.id.nav_grade);
-        TextView major = headerView.findViewById(R.id.nav_major);
+        TextView phone = headerView.findViewById(R.id.nav_phone);
         //获取来自LoginActivity传过来的数据
         nickName.setText(LoginActivity.userInfo.getNickname());
-        grade.setText(LoginActivity.userInfo.getGrade());
-        major.setText(LoginActivity.userInfo.getMajor());
+        phone.setText(LoginActivity.userInfo.getPhone());
         //这里的URL没有真正的存图片内容，这个以后还可以扩展
         int imgUrl = Integer.parseInt(LoginActivity.userInfo.getImgUrl());
         imageView.setImageResource(imgArr[imgUrl]);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //头像点击跳转
                 PersonPageActivity.actionStart(activity);
             }
         });

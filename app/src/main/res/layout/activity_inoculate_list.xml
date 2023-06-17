@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/SZU_color3"
+    tools:context=".InoculateListActivity"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/right_recycler_view"
+        android:layout_marginStart="15dp"
+        />
+    <Button
+        android:id="@+id/add_inoculate"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center | end"
+        android:textSize="18sp"
+        android:background="@drawable/plus_button"
+        />
+
+</LinearLayout>

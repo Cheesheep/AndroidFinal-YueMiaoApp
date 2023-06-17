@@ -50,7 +50,7 @@
                         android:id="@+id/person_image"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/mokelo" />
+                        android:src="@drawable/person_page" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
@@ -183,6 +183,93 @@
                     />
             </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="10dp"
+            >
+            <ImageView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/personal"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="操作手册"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <!--头像框，cardView可以让头像设置圆角-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end | center_vertical"
+                android:layout_marginRight="15dp"
+                >
+                <!--用户信息-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right_arrow"
+                    android:backgroundTint="@color/SZU_color3_deeper"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="10dp"
+            >
+            <ImageView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/personal"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="常见问题"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <!--头像框，cardView可以让头像设置圆角-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end | center_vertical"
+                android:layout_marginRight="15dp"
+                >
+                <!--用户信息-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/right_arrow"
+                    android:backgroundTint="@color/SZU_color3_deeper"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="退出登录"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
     </LinearLayout>
 </FrameLayout>
     <include

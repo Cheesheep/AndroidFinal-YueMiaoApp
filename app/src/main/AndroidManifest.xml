@@ -17,13 +17,19 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".InoculateEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InoculateListActivity"
+            android:exported="false" />
+        <activity
             android:name=".PersonPageActivity"
             android:exported="false" />
         <activity
             android:name=".VaccineCardActivity"
             android:exported="false" />
         <activity
-            android:name=".UserInfoPageActivity"
+            android:name=".InoculateInfoPageActivity"
             android:exported="false" />
         <activity
             android:name=".NewsArticleContentActivity"
