@@ -13,4 +13,10 @@
     <color name="yuemiao_color2">#E64F80</color>
     <color name="yuemiao_color3">#f2f4f7</color>
     <color name="yuemiao_color3_deeper">#ddd3d7</color>
+    <!--二维码扫描用到的颜色-->
+    <color name="scan_mask">#60000000</color>
+    <color name="scan_laser">#17D2AC</color>
+    <color name="scan_dot">#ff6600</color>
+    <color name="scan_result_view">#b0000000</color>
+    <color name="scan_result_dots">#c099cc00</color>
 </resources>

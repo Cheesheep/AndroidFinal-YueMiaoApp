@@ -30,7 +30,7 @@
                 android:background="@color/white"
                 android:layout_marginBottom="10dp"
                 android:paddingVertical="10dp"
-                android:id="@+id/shouzhongzhe"
+                android:id="@+id/team_record"
                 >
                 <ImageView
                     android:layout_marginLeft="6dp"
@@ -95,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:textColor="@color/black"
-                        android:hint="手动输入团体码"
+                        android:hint="输入团体码"
                         android:textColorHint="@color/gray"
                         android:theme="@style/MyEditTextStyle"
                         />
@@ -114,7 +114,10 @@
                 android:id="@+id/generate_qr_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="生成二维码（可长按保存）"/>
+                android:padding="10dp"
+                android:text="生成自己的团体码（长按保存）"
+                android:textSize="15sp"
+                />
         </LinearLayout>
         <!--头像框，cardView可以让头像设置圆角-->
         <LinearLayout
