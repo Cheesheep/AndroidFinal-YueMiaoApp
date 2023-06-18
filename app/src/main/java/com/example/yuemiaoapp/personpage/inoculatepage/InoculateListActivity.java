@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp;
+package com.example.yuemiaoapp.personpage.inoculatepage;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -18,8 +18,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.yuemiaoapp.schobject.InoculateInfo;
-import com.example.yuemiaoapp.schobject.UserInfo;
+import com.example.yuemiaoapp.common.BaseActivity;
+import com.example.yuemiaoapp.login.LoginActivity;
+import com.example.yuemiaoapp.R;
+import com.example.yuemiaoapp.entity.InoculateInfo;
+import com.example.yuemiaoapp.entity.UserInfo;
 
 import org.litepal.LitePal;
 

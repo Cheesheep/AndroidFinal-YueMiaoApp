@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".VaccineCardActivity">
+    tools:context=".homepage.moreservice.MoreServiceActivity">
     <fragment
         android:id="@+id/right_frag"
-        android:name="com.example.yuemiaoapp.fragment.MoreServiceFragment"
+        android:name="com.example.yuemiaoapp.homepage.moreservice.MoreServiceFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"

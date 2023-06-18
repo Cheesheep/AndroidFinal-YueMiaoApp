@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp;
+package com.example.yuemiaoapp.common;
 
 
 import android.content.IntentFilter;
@@ -8,7 +8,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.yuemiaoapp.function.ActivityCollector;
-import com.example.yuemiaoapp.function.ForceOffLineReceiver;
 
 /*
 * 该类作为所有活动的父类，用于回收

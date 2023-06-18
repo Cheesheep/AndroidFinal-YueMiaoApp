@@ -25,10 +25,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".TeamBookActivity"
+            android:name=".teambookpage.TeamBookActivity"
             android:exported="false" />
         <activity
-            android:name=".ClinicMapActivity"
+            android:name=".clinicmappage.ClinicMapActivity"
             android:exported="false" />
 
         <service
@@ -41,29 +41,29 @@
             android:value="u8YbhtgNIopwWFDRflQ0KHmXaIlCZBHR" />
 
         <activity
-            android:name=".InoculateEditActivity"
+            android:name=".personpage.inoculatepage.InoculateEditActivity"
             android:exported="false" />
         <activity
-            android:name=".InoculateListActivity"
+            android:name=".personpage.inoculatepage.InoculateListActivity"
             android:exported="false" />
         <activity
-            android:name=".PersonPageActivity"
+            android:name=".personpage.PersonPageActivity"
             android:exported="false" />
         <activity
-            android:name=".VaccineCardActivity"
+            android:name=".homepage.moreservice.MoreServiceActivity"
             android:exported="false" />
         <activity
-            android:name=".InoculateInfoPageActivity"
+            android:name=".personpage.inoculatepage.InoculateInfoPageActivity"
             android:exported="false" />
         <activity
-            android:name=".NewsArticleContentActivity"
+            android:name=".common.NewsArticleContentActivity"
             android:exported="false" /> <!-- 首页作为MainActivity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".homepage.MainActivity"
             android:exported="false"
             android:theme="@style/Theme.SZU_PAGE" /> <!-- 登录页面作为主活动 -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".login.LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.SZU_PAGE">
             <intent-filter>

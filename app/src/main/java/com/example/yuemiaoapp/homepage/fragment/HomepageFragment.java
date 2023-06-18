@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp.fragment;
+package com.example.yuemiaoapp.homepage.fragment;
 
 import android.os.Bundle;
 
@@ -14,11 +14,10 @@ import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.Toast;
 
-import com.example.yuemiaoapp.TeamBookActivity;
-import com.example.yuemiaoapp.VaccineCardActivity;
-import com.example.yuemiaoapp.NewsArticleContentActivity;
+import com.example.yuemiaoapp.teambookpage.TeamBookActivity;
+import com.example.yuemiaoapp.homepage.moreservice.MoreServiceActivity;
+import com.example.yuemiaoapp.common.NewsArticleContentActivity;
 import com.example.yuemiaoapp.R;
-import com.example.yuemiaoapp.function.NewsFragmentPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 /**
@@ -97,7 +96,7 @@ public class HomepageFragment extends Fragment {
                         TeamBookActivity.actionStart(activity);
                         break;}
                     case R.id.grid_bt7: {
-                        VaccineCardActivity.actionStart(activity);
+                        MoreServiceActivity.actionStart(activity);
                         break;}
                     default:
                         Toast.makeText(activity, "功能尚未开发", Toast.LENGTH_SHORT).show();

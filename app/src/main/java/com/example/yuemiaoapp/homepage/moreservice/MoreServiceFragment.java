@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp.fragment;
+package com.example.yuemiaoapp.homepage.moreservice;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.yuemiaoapp.R;
-import com.example.yuemiaoapp.function.MoreServiceAdapter;
 
 public class MoreServiceFragment extends Fragment {
     View view;

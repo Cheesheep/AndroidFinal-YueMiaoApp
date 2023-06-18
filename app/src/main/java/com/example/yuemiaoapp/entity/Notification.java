@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp.schobject;
+package com.example.yuemiaoapp.entity;
 
 import org.litepal.crud.LitePalSupport;
 

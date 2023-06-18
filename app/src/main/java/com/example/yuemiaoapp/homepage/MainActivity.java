@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp;
+package com.example.yuemiaoapp.homepage;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +10,11 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.yuemiaoapp.common.BaseActivity;
+import com.example.yuemiaoapp.common.NewsArticleContentActivity;
+import com.example.yuemiaoapp.R;
 import com.example.yuemiaoapp.function.BottomBarUtil;
-import com.example.yuemiaoapp.function.ForceOffLineReceiver;
-import com.example.yuemiaoapp.function.NavigationUtil;
+import com.example.yuemiaoapp.common.ForceOffLineReceiver;
 
 /**
  * 主页面，单页模式放有左右碎片
@@ -28,7 +30,6 @@ public class MainActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("YueMiao");
         //设置顶部菜单栏的按钮，监听事件等
         initToolBarView();
         NavigationUtil navigationUtil = new NavigationUtil(this,myToolbar,drawerLayout);
@@ -41,7 +42,7 @@ public class MainActivity extends BaseActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
         //将图标菜单文件添加到toolbar当中
         myToolbar.inflateMenu(R.menu.toolbar_menu);
-        myToolbar.setTitle("SZU");
+        myToolbar.setTitle("YueMiao");
         //ToolBar的菜单的点击事件
         myToolbar.setOnMenuItemClickListener(item -> { //toolbar菜单点击事件
             switch (item.getItemId()){

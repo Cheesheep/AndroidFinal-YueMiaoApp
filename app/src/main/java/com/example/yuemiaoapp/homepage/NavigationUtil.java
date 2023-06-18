@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp.function;
+package com.example.yuemiaoapp.homepage;
 
 import android.view.Gravity;
 import android.view.View;
@@ -9,11 +9,11 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.example.yuemiaoapp.InoculateListActivity;
-import com.example.yuemiaoapp.LoginActivity;
-import com.example.yuemiaoapp.MainActivity;
-import com.example.yuemiaoapp.PersonPageActivity;
+import com.example.yuemiaoapp.personpage.inoculatepage.InoculateListActivity;
+import com.example.yuemiaoapp.login.LoginActivity;
+import com.example.yuemiaoapp.personpage.PersonPageActivity;
 import com.example.yuemiaoapp.R;
+import com.example.yuemiaoapp.common.ForceOffLineReceiver;
 import com.google.android.material.navigation.NavigationView;
 
 

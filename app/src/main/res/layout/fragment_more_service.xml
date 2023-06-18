@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/yuemiao_color3"
-    tools:context=".fragment.MoreServiceFragment">
+    tools:context=".homepage.moreservice.MoreServiceFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

@@ -1,20 +1,17 @@
-package com.example.yuemiaoapp;
+package com.example.yuemiaoapp.teambookpage;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.king.zxing.CaptureActivity;
+import com.example.yuemiaoapp.R;
 
 /**
  * func: 团体预约界面（扫描二维码加入）

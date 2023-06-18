@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp.fragment;
+package com.example.yuemiaoapp.homepage.fragment;
 
 
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
-import com.example.yuemiaoapp.MainActivity;
-import com.example.yuemiaoapp.NewsArticleContentActivity;
+import com.example.yuemiaoapp.common.NewsArticleContentActivity;
 import com.example.yuemiaoapp.R;
-import com.example.yuemiaoapp.schobject.Notification;
+import com.example.yuemiaoapp.entity.Notification;
+import com.example.yuemiaoapp.homepage.MainActivity;
 
 import org.litepal.LitePal;
 

@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp;
+package com.example.yuemiaoapp.clinicmappage;
 
 import android.Manifest;
 import android.content.Context;
@@ -48,9 +48,9 @@ import com.baidu.mapapi.search.poi.PoiDetailSearchResult;
 import com.baidu.mapapi.search.poi.PoiIndoorResult;
 import com.baidu.mapapi.search.poi.PoiResult;
 import com.baidu.mapapi.search.poi.PoiSearch;
+import com.example.yuemiaoapp.common.BaseActivity;
+import com.example.yuemiaoapp.R;
 import com.example.yuemiaoapp.function.BottomBarUtil;
-import com.example.yuemiaoapp.function.ClinicListAdapter;
-import com.example.yuemiaoapp.function.BaiduMapUtils;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;

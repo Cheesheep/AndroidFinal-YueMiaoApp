@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp.function;
+package com.example.yuemiaoapp.homepage.moreservice;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.yuemiaoapp.NewsArticleContentActivity;
+import com.example.yuemiaoapp.common.NewsArticleContentActivity;
 import com.example.yuemiaoapp.R;
-import com.example.yuemiaoapp.schobject.Card;
+import com.example.yuemiaoapp.entity.Card;
 
 import org.litepal.LitePal;
 

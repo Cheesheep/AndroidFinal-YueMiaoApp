@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp;
+package com.example.yuemiaoapp.login;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,8 +9,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.yuemiaoapp.R;
+import com.example.yuemiaoapp.common.BaseActivity;
 import com.example.yuemiaoapp.function.DatabaseUtil;
-import com.example.yuemiaoapp.schobject.UserInfo;
+import com.example.yuemiaoapp.entity.UserInfo;
+import com.example.yuemiaoapp.homepage.MainActivity;
 
 import org.litepal.LitePal;
 import org.litepal.tablemanager.Connector;

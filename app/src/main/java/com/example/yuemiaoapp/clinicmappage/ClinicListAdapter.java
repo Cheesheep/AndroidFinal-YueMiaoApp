@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp.function;
+package com.example.yuemiaoapp.clinicmappage;
 
 
 import android.app.Activity;

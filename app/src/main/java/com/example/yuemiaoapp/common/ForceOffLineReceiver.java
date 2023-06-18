@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp.function;
+package com.example.yuemiaoapp.common;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -9,7 +9,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import androidx.appcompat.app.AlertDialog;
 
-import com.example.yuemiaoapp.LoginActivity;
+import com.example.yuemiaoapp.function.ActivityCollector;
+import com.example.yuemiaoapp.login.LoginActivity;
 
 //用于广播下线
 public class ForceOffLineReceiver extends BroadcastReceiver {

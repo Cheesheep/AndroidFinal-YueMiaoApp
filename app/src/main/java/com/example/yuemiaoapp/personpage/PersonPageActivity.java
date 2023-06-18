@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp;
+package com.example.yuemiaoapp.personpage;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,9 +9,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.yuemiaoapp.common.BaseActivity;
+import com.example.yuemiaoapp.personpage.inoculatepage.InoculateListActivity;
+import com.example.yuemiaoapp.login.LoginActivity;
+import com.example.yuemiaoapp.R;
 import com.example.yuemiaoapp.function.BottomBarUtil;
-import com.example.yuemiaoapp.function.ForceOffLineReceiver;
-import com.example.yuemiaoapp.schobject.UserInfo;
+import com.example.yuemiaoapp.common.ForceOffLineReceiver;
+import com.example.yuemiaoapp.entity.UserInfo;
 
 public class PersonPageActivity extends BaseActivity {
     UserInfo curUserInfo = LoginActivity.userInfo;

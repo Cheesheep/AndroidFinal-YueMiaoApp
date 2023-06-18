@@ -6,9 +6,9 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.yuemiaoapp.ClinicMapActivity;
-import com.example.yuemiaoapp.MainActivity;
-import com.example.yuemiaoapp.PersonPageActivity;
+import com.example.yuemiaoapp.clinicmappage.ClinicMapActivity;
+import com.example.yuemiaoapp.homepage.MainActivity;
+import com.example.yuemiaoapp.personpage.PersonPageActivity;
 import com.example.yuemiaoapp.R;
 
 /*

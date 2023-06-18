@@ -1,4 +1,4 @@
-package com.example.yuemiaoapp;
+package com.example.yuemiaoapp.personpage.inoculatepage;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -11,7 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.yuemiaoapp.schobject.InoculateInfo;
+import com.example.yuemiaoapp.common.BaseActivity;
+import com.example.yuemiaoapp.login.LoginActivity;
+import com.example.yuemiaoapp.R;
+import com.example.yuemiaoapp.entity.InoculateInfo;
 
 public class InoculateEditActivity extends BaseActivity {
     EditText nameEdit;

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/yuemiao_color3"
-    tools:context=".InoculateListActivity"
+    tools:context=".personpage.inoculatepage.InoculateListActivity"
     >
 
     <androidx.recyclerview.widget.RecyclerView

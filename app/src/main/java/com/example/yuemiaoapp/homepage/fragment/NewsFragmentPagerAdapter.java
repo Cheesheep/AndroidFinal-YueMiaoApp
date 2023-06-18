@@ -1,11 +1,11 @@
-package com.example.yuemiaoapp.function;
+package com.example.yuemiaoapp.homepage.fragment;
 
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.yuemiaoapp.fragment.NewsListFragment;
+import com.example.yuemiaoapp.homepage.fragment.NewsListFragment;
 
 
 /**
