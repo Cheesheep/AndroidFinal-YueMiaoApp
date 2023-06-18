@@ -24,13 +24,13 @@ import org.litepal.LitePal;
 import java.util.List;
 
 
-public class NotificationFragment extends Fragment {
+public class NewsListFragment extends Fragment {
     private ListView lv;
     private List<Notification> mList;
     private View globalView;
     private MainActivity mainActivity;
     private String label; //tab显示文章的标签
-    public NotificationFragment(String label){
+    public NewsListFragment(String label){
         this.label = label;
     }
 
@@ -47,7 +47,7 @@ public class NotificationFragment extends Fragment {
     }
 
     private void initAdapter() {
-        lv.setAdapter(new NotificationFragment.NewsAdapter());
+        lv.setAdapter(new NewsListFragment.NewsAdapter());
     }
 
     private void initData() {
@@ -84,9 +84,9 @@ public class NotificationFragment extends Fragment {
         }
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            NotificationFragment.ViewHolder holder;
+            NewsListFragment.ViewHolder holder;
             if (convertView == null) {//获取卡片的具体内容
-                holder = new NotificationFragment.ViewHolder();
+                holder = new NewsListFragment.ViewHolder();
                 convertView = View.inflate(mainActivity.getApplicationContext(), R.layout.listview_item, null);
                 holder.title = (TextView) convertView.findViewById(R.id.news_title);
                 holder.type = (TextView) convertView.findViewById(R.id.news_type);
@@ -95,7 +95,7 @@ public class NotificationFragment extends Fragment {
 
                 convertView.setTag(holder);
             } else {
-                holder = (NotificationFragment.ViewHolder) convertView.getTag();
+                holder = (NewsListFragment.ViewHolder) convertView.getTag();
             }
             Notification item = getItem(position);
             holder.title.setText(item.getTitle());

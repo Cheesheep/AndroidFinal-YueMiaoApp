@@ -40,7 +40,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:textColor="@color/SZU_color3_deeper"
+                android:textColor="@color/yuemiao_color3_deeper"
                 android:theme="@style/MyEditTextStyle"
                 />
             <!--app bgTint那个用来将下划线的颜色更改-->
@@ -63,7 +63,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:textColor="@color/SZU_color3_deeper"
+                android:textColor="@color/yuemiao_color3_deeper"
                 android:theme="@style/MyEditTextStyle"
                 android:inputType="textPassword"
                 />
@@ -78,7 +78,7 @@
                 android:id="@+id/remember_pass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/SZU_color3_deeper"
+                android:buttonTint="@color/yuemiao_color3_deeper"
                 />
 
             <TextView

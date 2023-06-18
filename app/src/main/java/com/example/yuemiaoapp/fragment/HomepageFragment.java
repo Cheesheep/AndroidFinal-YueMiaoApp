@@ -12,7 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
+import android.widget.Toast;
 
+import com.example.yuemiaoapp.TeamBookActivity;
 import com.example.yuemiaoapp.VaccineCardActivity;
 import com.example.yuemiaoapp.NewsArticleContentActivity;
 import com.example.yuemiaoapp.R;
@@ -24,7 +26,7 @@ import com.google.android.material.tabs.TabLayout;
  * 也是手机模式下的主页面所有内容
  */
 
-public class LocationListFragment extends Fragment {
+public class HomepageFragment extends Fragment {
 
     View view;
     Boolean isTwoPane;
@@ -44,7 +46,7 @@ public class LocationListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         //获取碎片视图
-        view = inflater.inflate(R.layout.fragment_location_list, container, false);
+        view = inflater.inflate(R.layout.fragment_homepage, container, false);
         //设置首页工具栏内容以及样式
         //初始化上方的网格菜单
         initGridMenu();
@@ -92,12 +94,14 @@ public class LocationListFragment extends Fragment {
                         NewsArticleContentActivity.actionStart(activity,"教师事务","https://www1.szu.edu.cn/view.asp?id=12");
                         break;}
                     case R.id.grid_bt6: {
-                        NewsArticleContentActivity.actionStart(activity,"学生事务","https://www1.szu.edu.cn/view.asp?id=13");
+                        TeamBookActivity.actionStart(activity);
                         break;}
                     case R.id.grid_bt7: {
                         VaccineCardActivity.actionStart(activity);
                         break;}
-                    default:break;
+                    default:
+                        Toast.makeText(activity, "功能尚未开发", Toast.LENGTH_SHORT).show();
+                        break;
                 }
             });
         }

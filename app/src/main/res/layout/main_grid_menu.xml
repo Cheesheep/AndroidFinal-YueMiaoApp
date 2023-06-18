@@ -27,7 +27,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal|center_vertical"
             android:textColor="@color/colorPrimary"
-            android:backgroundTint="@color/SZU_color3"
+            android:backgroundTint="@color/yuemiao_color3"
             android:drawableTint="@color/colorPrimary"
             android:drawableTop="@drawable/child_vaccine"
             />
@@ -43,7 +43,7 @@
             android:layout_gravity="fill_horizontal|center_vertical"
             android:drawableTop="@drawable/adult_vaccine"
             android:textColor="@color/colorPrimary"
-            android:backgroundTint="@color/SZU_color3"
+            android:backgroundTint="@color/yuemiao_color3"
             android:drawableTint="@color/colorPrimary"
             />
 
@@ -58,7 +58,7 @@
             android:layout_gravity="fill_horizontal|center_vertical"
             android:drawableTop="@drawable/hpv_vaccine"
             android:textColor="@color/colorPrimary"
-            android:backgroundTint="@color/SZU_color3"
+            android:backgroundTint="@color/yuemiao_color3"
             android:drawableTint="@color/colorPrimary"
             />
     </GridLayout>
@@ -77,41 +77,41 @@
             android:id="@+id/grid_bt4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="校务信箱"
+            android:text="预约记录"
             android:textSize="13sp"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal|center_vertical"
             android:drawableTop="@drawable/menu_mailbox"
-            android:textColor="@color/colorPrimary"
-            android:backgroundTint="@color/SZU_color3"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/yuemiao_color3"
             />
         <Button
             android:id="@+id/grid_bt5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="13sp"
-            android:text="教师事务"
+            android:text="接种参考"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal|center_vertical"
             android:drawableTop="@drawable/menu_teach"
-            android:textColor="@color/colorPrimary"
-            android:backgroundTint="@color/SZU_color3"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/yuemiao_color3"
             />
 
         <Button
             android:id="@+id/grid_bt6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="学生事务"
+            android:text="团体预约"
             android:textSize="13sp"
             android:layout_column="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal|center_vertical"
             android:drawableTop="@drawable/menu_student"
-            android:textColor="@color/colorPrimary"
-            android:backgroundTint="@color/SZU_color3"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/yuemiao_color3"
             />
         <Button
             android:id="@+id/grid_bt7"
@@ -123,8 +123,8 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal|center_vertical"
             android:drawableTop="@drawable/menu_more"
-            android:textColor="@color/colorPrimary"
-            android:backgroundTint="@color/SZU_color3"
+            android:textColor="@color/gray"
+            android:backgroundTint="@color/yuemiao_color3"
             />
     </GridLayout>
 

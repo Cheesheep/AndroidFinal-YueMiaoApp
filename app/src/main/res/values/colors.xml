@@ -9,9 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#bfbfbf</color>
     <color name="colorPrimary">#17D2AC</color>
-    <color name="SZU_color1">#17D2AC</color>
-    <color name="SZU_color2">#E64F80</color>
-    <color name="SZU_color3">#f2f4f7</color>
-    <color name="SZU_color3_deeper">#ddd3d7</color>
-
+    <color name="yuemiao_color1">#4b9ae8</color>
+    <color name="yuemiao_color2">#E64F80</color>
+    <color name="yuemiao_color3">#f2f4f7</color>
+    <color name="yuemiao_color3_deeper">#ddd3d7</color>
 </resources>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/SZU_color3"
+    android:background="@color/yuemiao_color3"
     tools:context=".InoculateListActivity"
     >
 

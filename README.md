@@ -419,13 +419,13 @@ android:layout_width="match_parent" .......><!--顶部工具栏-->
 <androidx.appcompat.widget.Toolbar   ......./><ImageView ............/><LinearLayout.........>
 <!--左边碎片-->
 <fragment android:id="@+id/main_left_fragment"
-    android:name="com.example.yuemiaoapp.fragment.LocationListFragment"
+    android:name="com.example.yuemiaoapp.fragment.HomepageFragment"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:layout_weight="3" tools:layout="@layout/fragment_main_left"
     tools:ignore="MissingConstraints" />
 <!--右边碎片-->
 <fragment android:id="@+id/right_frag"
-    android:name="com.example.yuemiaoapp.fragment.MainRightFragment"
+    android:name="com.example.yuemiaoapp.fragment.MoreServiceFragment"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:layout_gravity="center" android:layout_weight="2"
     tools:layout="@layout/fragment_main_right" tools:ignore="MissingConstraints" />

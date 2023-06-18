@@ -15,7 +15,7 @@
     </style>
     <style name="Theme.SZU_PAGE" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/SZU_color3</item>
+        <item name="colorPrimaryVariant">@color/yuemiao_color3</item>
     </style>
     <!--    TabLayout的文本大小-->
     <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">

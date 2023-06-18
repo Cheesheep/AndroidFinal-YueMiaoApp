@@ -16,11 +16,11 @@ import org.litepal.LitePal;
 
 import java.util.List;
 
-public class RightGridMenuAdapter extends RecyclerView.Adapter<RightGridMenuAdapter.ViewHolder> {
+public class MoreServiceAdapter extends RecyclerView.Adapter<MoreServiceAdapter.ViewHolder> {
     List<Card> cardList = LitePal.findAll(Card.class);
     View cardView;
     Activity activity;
-    public RightGridMenuAdapter(Activity activity){
+    public MoreServiceAdapter(Activity activity){
         this.activity = activity;
     }
     static class ViewHolder extends RecyclerView.ViewHolder{
@@ -34,7 +34,7 @@ public class RightGridMenuAdapter extends RecyclerView.Adapter<RightGridMenuAdap
     }
 
     @Override
-    public RightGridMenuAdapter.ViewHolder onCreateViewHolder( ViewGroup viewGroup, int viewType) {
+    public MoreServiceAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         //将卡片的布局样式加载进来
         View view = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.card_item,viewGroup,false);

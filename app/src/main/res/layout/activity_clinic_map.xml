@@ -36,7 +36,7 @@
         android:id="@+id/lin_top"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:background="@color/SZU_color3"
+        android:background="@color/yuemiao_color3"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent">
         

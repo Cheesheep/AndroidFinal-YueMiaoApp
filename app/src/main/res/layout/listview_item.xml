@@ -14,7 +14,7 @@
         android:text="[类型]"
         android:gravity="left"
         android:layout_margin="16dp"
-        android:textColor="#950040"
+        android:textColor="@color/yuemiao_color1"
         android:textSize="16sp" />
 
     <LinearLayout

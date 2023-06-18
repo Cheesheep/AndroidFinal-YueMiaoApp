@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!--tab的背景的选中颜色和原本样式颜色-->
-    <item android:state_selected="true" android:drawable="@color/SZU_color2"/>
-    <item android:drawable="@color/SZU_color3"/>
+    <item android:state_selected="true" android:drawable="@color/yuemiao_color1"/>
+    <item android:drawable="@color/yuemiao_color3"/>
 </selector>

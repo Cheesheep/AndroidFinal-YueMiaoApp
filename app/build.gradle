@@ -44,11 +44,12 @@ dependencies {
     //引用别人的百度地图项目时用到的
 //    implementation 'com.jakewharton:butterknife:10.2.3'
 //    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
-//    由于下面的scwang包无法使用所以直接外部导入
-//    implementation files('libs/classes.jar')
-//    implementation 'com.scwang90:refresh-layout-kernel:2.0.5'
-//    implementation 'com.scwang.smart:refresh-header-classics:<latest_version>'
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-21'
+    //二维码扫描依赖
+    implementation 'com.king.zxing:zxing-lite:1.1.7-androidx'
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

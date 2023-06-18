@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/SZU_color3">
+    android:background="@color/yuemiao_color3">
     <!--顶部网格菜单-->
     <include layout="@layout/main_grid_menu"/>
     <LinearLayout
@@ -33,10 +33,10 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/SZU_color3"
-        app:tabIndicatorColor="#ffffff"
+        android:background="@color/yuemiao_color3"
+        app:tabIndicatorColor="@color/yuemiao_color3"
         app:tabIndicatorHeight="5dp"
-        app:tabTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/yuemiao_color1"
         app:tabIconTint="@color/white"
         app:tabSelectedTextColor="@color/white"
         app:tabMode="fixed"

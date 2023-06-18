@@ -8,7 +8,7 @@
 
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@color/SZU_color3">
+    android:background="@color/yuemiao_color3">
 
     <ImageView
         android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/right_arrow"
-                    android:backgroundTint="@color/SZU_color3_deeper"
+                    android:backgroundTint="@color/yuemiao_color3_deeper"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -140,7 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/right_arrow"
-                    android:backgroundTint="@color/SZU_color3_deeper"
+                    android:backgroundTint="@color/yuemiao_color3_deeper"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -179,7 +179,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/right_arrow"
-                    android:backgroundTint="@color/SZU_color3_deeper"
+                    android:backgroundTint="@color/yuemiao_color3_deeper"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -218,7 +218,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/right_arrow"
-                    android:backgroundTint="@color/SZU_color3_deeper"
+                    android:backgroundTint="@color/yuemiao_color3_deeper"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -257,7 +257,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/right_arrow"
-                    android:backgroundTint="@color/SZU_color3_deeper"
+                    android:backgroundTint="@color/yuemiao_color3_deeper"
                     />
             </LinearLayout>
         </LinearLayout>

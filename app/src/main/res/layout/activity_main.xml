@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
-        android:background="@color/SZU_color3"
+        android:background="@color/yuemiao_color3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_bar"
@@ -63,11 +63,11 @@
             </LinearLayout>
             <fragment
                 android:id="@+id/main_left_fragment"
-                android:name="com.example.yuemiaoapp.fragment.LocationListFragment"
+                android:name="com.example.yuemiaoapp.fragment.HomepageFragment"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="5"
-                tools:layout="@layout/fragment_location_list"
+                tools:layout="@layout/fragment_homepage"
                 tools:ignore="MissingConstraints" />
 
         </LinearLayout>
@@ -77,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="@color/SZU_color3"
+            android:background="@color/yuemiao_color3"
             app:headerLayout="@layout/nav_header"
             app:menu="@menu/left_drawer" />
         <!--menu里是第二条的文件名，即侧滑菜单的布局文件-->

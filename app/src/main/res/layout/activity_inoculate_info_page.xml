@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/SZU_color3"
+    android:background="@color/yuemiao_color3"
     tools:context=".InoculateInfoPageActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3"
+        android:background="@color/yuemiao_color3"
         android:layout_marginBottom="10dp"
         >
         <TextView
@@ -61,7 +61,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3_deeper"
+        android:background="@color/yuemiao_color3_deeper"
         android:layout_marginBottom="10dp"
         >
         <TextView
@@ -91,7 +91,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3_deeper"
+        android:background="@color/yuemiao_color3_deeper"
         android:layout_marginBottom="10dp"
         >
         <TextView
@@ -121,7 +121,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3_deeper"
+        android:background="@color/yuemiao_color3_deeper"
         android:layout_marginBottom="10dp"
         >
         <TextView
@@ -151,7 +151,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3_deeper"
+        android:background="@color/yuemiao_color3_deeper"
         android:layout_marginBottom="10dp"
         >
         <TextView
@@ -181,7 +181,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3_deeper"
+        android:background="@color/yuemiao_color3_deeper"
         android:layout_marginBottom="10dp"
         >
         <TextView
@@ -211,7 +211,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3_deeper"
+        android:background="@color/yuemiao_color3_deeper"
         android:layout_marginBottom="10dp"
         >
         <TextView
@@ -241,7 +241,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3_deeper"
+        android:background="@color/yuemiao_color3_deeper"
         android:layout_marginBottom="10dp"
         >
         <TextView
@@ -271,7 +271,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/SZU_color3_deeper"
+        android:background="@color/yuemiao_color3_deeper"
         android:layout_marginBottom="10dp"
         >
         <TextView

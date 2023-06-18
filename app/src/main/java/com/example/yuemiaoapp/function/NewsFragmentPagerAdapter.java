@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.yuemiaoapp.fragment.NotificationFragment;
+import com.example.yuemiaoapp.fragment.NewsListFragment;
 
 
 /**
@@ -13,7 +13,7 @@ import com.example.yuemiaoapp.fragment.NotificationFragment;
  * 用于TabLayout可以点击显示不同的新闻列表页面
  */
 public class NewsFragmentPagerAdapter extends FragmentPagerAdapter {
-    private String[] mTitles = new String[]{"最新", "推荐", "科研"};
+    private String[] mTitles = new String[]{"最新", "推荐", "新冠"};
 
     public NewsFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -23,11 +23,11 @@ public class NewsFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         //选择不同的菜单返回不同的Fragment页面
         if (position == 1) {
-            return new NotificationFragment("top");
+            return new NewsListFragment("top");
         } else if (position == 2) {
-            return new NotificationFragment("sci");
+            return new NewsListFragment("sci");
         }
-        return new NotificationFragment("latest");
+        return new NewsListFragment("latest");
     }
 
     @Override
