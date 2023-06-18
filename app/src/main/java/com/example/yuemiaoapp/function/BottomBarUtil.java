@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.yuemiaoapp.ClinicMapActivity;
 import com.example.yuemiaoapp.MainActivity;
 import com.example.yuemiaoapp.PersonPageActivity;
 import com.example.yuemiaoapp.R;
@@ -37,6 +38,9 @@ public class BottomBarUtil {
             personPage.setCompoundDrawables(drawables[0],drawables[1],drawables[2],drawables[3]);
         }else{
             clinicPage.setTextColor(currentActivity.getResources().getColor(R.color.colorPrimary));
+            drawables = clinicPage.getCompoundDrawables();
+            drawables[1].setColorFilter(currentActivity.getResources().getColor(R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
+            clinicPage.setCompoundDrawables(drawables[0],drawables[1],drawables[2],drawables[3]);
         }
         //设置页面跳转功能
         homePage.setOnClickListener(onClickListener);
@@ -54,6 +58,8 @@ public class BottomBarUtil {
                     break;
                 case R.id.clinic_page:
                     // 在这里编写clinicPage的点击事件处理逻辑
+                    if(! (view.getContext() instanceof ClinicMapActivity) )
+                        ClinicMapActivity.actionStart(currentActivity);
                     break;
                 case R.id.person_page:
                     // 在这里编写personPage的点击事件处理逻辑

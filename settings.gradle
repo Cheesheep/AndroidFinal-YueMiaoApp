@@ -3,6 +3,9 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        jcenter()
+//        maven { url 'https://repo1.maven.org/maven2/' }
+
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +13,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        jcenter()
+
     }
 }
 rootProject.name = "YueMiaoAPP"

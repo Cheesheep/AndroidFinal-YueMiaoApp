@@ -28,6 +28,7 @@ public class MainActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("YueMiao");
         //设置顶部菜单栏的按钮，监听事件等
         initToolBarView();
         NavigationUtil navigationUtil = new NavigationUtil(this,myToolbar,drawerLayout);
