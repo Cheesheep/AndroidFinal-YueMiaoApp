@@ -155,10 +155,9 @@ public class SlideShowFragment extends Fragment {
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.pager_img1:
-                    Toast.makeText(view.getContext(), "图片1被点击", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(view.getContext(), "听从指挥，抗击疫情", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.pager_img2:
-                    Toast.makeText(view.getContext(), "图片2被点击", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.pager_img3:
                     break;

@@ -53,18 +53,24 @@ public class BottomBarUtil {
             switch (view.getId()) {
                 case R.id.home_page:
                     // 在这里编写homePage的点击事件处理逻辑
-                    if(! (view.getContext() instanceof MainActivity) )
+                    if(! (view.getContext() instanceof MainActivity) ){
                         MainActivity.actionStart(currentActivity);
+                        currentActivity.finish();
+                    }
                     break;
                 case R.id.clinic_page:
                     // 在这里编写clinicPage的点击事件处理逻辑
-                    if(! (view.getContext() instanceof ClinicMapActivity) )
+                    if(! (view.getContext() instanceof ClinicMapActivity) ){
                         ClinicMapActivity.actionStart(currentActivity);
+                        currentActivity.finish();
+                    }
                     break;
                 case R.id.person_page:
                     // 在这里编写personPage的点击事件处理逻辑
-                    if(! (view.getContext() instanceof PersonPageActivity) )
+                    if(! (view.getContext() instanceof PersonPageActivity) ){
                         PersonPageActivity.actionStart(currentActivity);
+                        currentActivity.finish();
+                    }
                     break;
             }
         }

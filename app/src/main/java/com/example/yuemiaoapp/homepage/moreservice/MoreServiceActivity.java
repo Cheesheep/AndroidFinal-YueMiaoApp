@@ -21,7 +21,7 @@ public class MoreServiceActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vaccine_card);
         ActionBar actionBar = getSupportActionBar();
-        setTitle("SZU Menu");
+        setTitle("More Service Menu");
         if(actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeButtonEnabled(true);

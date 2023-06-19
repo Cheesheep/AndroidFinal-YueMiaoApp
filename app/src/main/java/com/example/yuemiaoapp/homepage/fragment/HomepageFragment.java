@@ -77,21 +77,6 @@ public class HomepageFragment extends Fragment {
         for (int i = 0; i < 7; i++) {
             view.findViewById(menu_arr[i]).setOnClickListener(click_view -> {
                 switch (click_view.getId()){
-                    case R.id.grid_bt1: {
-                        NewsArticleContentActivity.actionStart(activity,"计软主页","https://csse.szu.edu.cn/");
-                        break;}
-                    case R.id.grid_bt2: {
-                        NewsArticleContentActivity.actionStart(activity,"学校简介","https://www.szu.edu.cn/xxgk/xxjj.htm");
-                        break;}
-                    case R.id.grid_bt3: {
-                        NewsArticleContentActivity.actionStart(activity,"本科选课","http://bkxk.szu.edu.cn/xsxkapp/sys/xsxkapp/*default/index.do");
-                        break;}
-                    case R.id.grid_bt4: {
-                        NewsArticleContentActivity.actionStart(activity,"校务信箱","https://www1.szu.edu.cn/mailbox/");
-                        break;}
-                    case R.id.grid_bt5: {
-                        NewsArticleContentActivity.actionStart(activity,"教师事务","https://www1.szu.edu.cn/view.asp?id=12");
-                        break;}
                     case R.id.grid_bt6: {
                         TeamBookActivity.actionStart(activity);
                         break;}
@@ -99,7 +84,7 @@ public class HomepageFragment extends Fragment {
                         MoreServiceActivity.actionStart(activity);
                         break;}
                     default:
-                        Toast.makeText(activity, "功能尚未开发", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(activity, "该专题尚未开发", Toast.LENGTH_SHORT).show();
                         break;
                 }
             });

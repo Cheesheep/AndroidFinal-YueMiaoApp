@@ -46,10 +46,6 @@ public class MainActivity extends BaseActivity {
         //ToolBar的菜单的点击事件
         myToolbar.setOnMenuItemClickListener(item -> { //toolbar菜单点击事件
             switch (item.getItemId()){
-                case R.id.szu_home:{
-                    NewsArticleContentActivity.actionStart(MainActivity.this,"Home","https://www1.szu.edu.cn/");
-                    break;
-                }
                 case R.id.logout_button:{
                     ForceOffLineReceiver.sendLogoutBroadCast(MainActivity.this);
                     break;

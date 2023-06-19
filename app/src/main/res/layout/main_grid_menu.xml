@@ -9,7 +9,7 @@
     android:orientation="horizontal"
     android:id="@+id/main_grid_menu"
     >
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <GridLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:columnCount="3"
@@ -51,7 +51,7 @@
             android:id="@+id/grid_bt3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="本科选课"
+            android:text="HPV接种"
             android:layout_row="0"
             android:layout_column="2"
             android:layout_columnWeight="1"
@@ -64,7 +64,7 @@
     </GridLayout>
 
 <!--    第二行-->
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <GridLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:columnCount="5"

@@ -3,6 +3,10 @@ plugins {
 }
 
 android {
+    /*解决AAPT: error: file failed to compile*/
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
     namespace 'com.example.yuemiaoapp'
     compileSdk 33
 
@@ -33,7 +37,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    //新增的四个依赖，用于Tablayout，viewpager，recyclerView布局，以及数据库litepal
+    //三个依赖，用于Tablayout，viewpager，recyclerView布局
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
